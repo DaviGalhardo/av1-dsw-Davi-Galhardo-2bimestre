@@ -35,11 +35,12 @@ router.post("/tarefas", TarefaController.criarTarefa);
  * PATCH /tarefas/:id - Atualiza uma tarefa parcialmente
  */
 router.patch("/tarefas/:id", TarefaController.atualizarTarefa);
+router.put("/tarefas/:id", TarefaController.atualizarTarefa);
 
 /**
  * DELETE /tarefas/:id - Remove uma tarefa
  */
-router.delete("/tarefas/:id", TarefaController.excluirTarefa);
+router.delete("/tarefas/:id", TarefaController.deletarTarefa);
 
 // Exporta o roteador para ser usado no app principal
 export default router;

@@ -6,7 +6,10 @@
 // - Iniciar o servidor na porta especificada
 // - Separar a lógica de configuração da inicialização
 
+import dotenv from "dotenv";
 import app from "./app.js";
+
+dotenv.config();
 
 // Define a porta em que o servidor vai rodar
 // Usa a variável de ambiente PORT se existir, senão usa 3000
