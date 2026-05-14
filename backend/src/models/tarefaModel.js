@@ -6,9 +6,7 @@
 // - Implementar a lógica de negócio
 // - Realizar operações CRUD (Create, Read, Update, Delete)
 
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import { prisma } from "../config/prisma.js";
 
 // ========================================
 // OPERAÇÕES CRUD COM PRISMA
