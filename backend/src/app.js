@@ -8,10 +8,13 @@
 // - Preparar a aplicação para ser exportada
 
 import express from "express";
+import cors from "cors";
 import tarefaRoutes from "./routes/tarefaRoutes.js";
 
 // Cria a aplicação Express
 const app = express();
+
+app.use(cors());
 
 // ========================================
 // MIDDLEWARES

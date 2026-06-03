@@ -17,4 +17,6 @@ model Tarefa {
   descricao String
   concluida Boolean  @default(false)
   createdAt DateTime @default(now())
+
+  @@map("tarefas")
 }
